@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/stylesheets/dashboad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Hello, world!</title>
+</head>
+<style>
+    a:hover {
+        background: blue;
+        width: 190px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+    }
+</style>
+
+<body>
+    <div>
+        <nav class="nav flex-column ml-3">
+            <li class="nav flex-column ml-3">
+                <p><img src="/images/logo.jpg">
+                    BAD</p>
+                <br>
+            </li>
+            <a href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+            <br>
+            <a href="#home"><i class="fa fa-sitemap"></i>Inventory</a>
+
+            </li>
+        </nav>
+
+        <div class="container mr-3" style="background: white; height: 400px; border-radius: 5px; width: auto;">
+            <form action="http://localhost:3000/dashboard/store" method="POST">
+                <div class="form-group">
+                    <h1 style="text-align: center;"> Investory</h1>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nama Barang</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        name="nama_barang">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Jumlah Barang</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" name="jumlah_barang">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Harga Barang</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" name="harga_barang">
+
+                    </div>
+                    <center><button type="submit" class="btn btn-primary"
+                            style="width:300px; margin-right: auto;">Submit Barang </button></center>
+            </form>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
